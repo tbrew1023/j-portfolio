@@ -1,0 +1,276 @@
+body {
+    background: #dd7b98;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.nav {
+    position: fixed;
+    background: pink;
+    height: 100vh;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.nav-links {
+    display: block;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    position: absolute;
+    background-image: url('res/logo.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 120px;
+    margin: auto;
+    top: 20px;
+}
+
+.social {
+    background-image: url('res/social.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 80px;
+    position: absolute;
+    bottom: 20px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    padding-left: 180px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.portrait {
+    background-image: url('res/portrait.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 360px;
+    width: 240px;
+}
+
+.about-text {
+    width: 500px;
+    margin-left: 40px;
+}
+
+.port-grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+} 
+
+.illustration {
+    height: 300px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 300ms;
+}
+
+.illustration:hover {
+    filter: brightness(0.7);
+    cursor: pointer;
+}
+
+.illustration1 {
+    background-image: url('res/illustrations/Asset\ 2.png');
+}
+
+.illustration2 {
+    background-image: url('res/illustrations/Asset\ 3.svg');
+}
+
+.illustration3 {
+    background-image: url('res/illustrations/Asset\ 4.png');
+}
+
+.illustration4 {
+    background-image: url('res/illustrations/Asset\ 5.png');
+}
+
+.illustration5 {
+    background-image: url('res/illustrations/Asset\ 6.png');
+}
+
+.illustration6 {
+    background-image: url('res/illustrations/Asset\ 7.png');
+}
+
+.logo-item {
+    height: 300px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 300ms;
+}
+
+.logo-item:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.logo-item1 {
+    background-image: url('res/logos/dragon-smoke.svg');
+}
+
+.logo-item2 {
+    background-image: url('res/logos/ion.png');
+}
+
+.logo-item3 {
+    background-image: url('res/logos/jeremy-calloway.svg');
+}
+
+.logo-item4 {
+    background-image: url('res/logos/top-smash.svg');
+}
+
+.logo-item5 {
+    background-image: url('res/logos/various-occasions.svg');
+}
+
+.featured {
+    height: 200px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 300ms;
+}
+
+.featured:hover {
+    filter: brightness(0.7);
+    cursor: pointer;
+}
+
+.featured1 {
+    background-image: url('res/guillotine.svg');
+}
+
+.featured2 {
+    background-image: url('res/featured/Asset\ 10.png');
+}
+
+.featured3 {
+    background-image: url('res/featured/1x/Asset\ 13.png');
+}
+
+.featured4 {
+    background-image: url('res/featured/1x/Asset\ 14.png');
+}
+
+.featured5 {
+    background-image: url('res/featured/Asset\ 8.png');
+}
+
+.featured6 {
+    background-image: url('res/featured/Asset\ 9.png');
+}
+
+@media only screen and (max-width: 768px) {
+    .port-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav {
+        height: 180px;
+        width: 100%;
+        display: inline-flex;
+    }
+
+    ul {
+        display: inline-flex;
+        margin-top: 100px;
+    }
+
+    li {
+        margin: 20px;
+    }
+
+    a {
+        font-size: 12px;
+    }
+
+    .container {
+        margin: 0;
+        padding: 200px 0px 0px 0px;
+        height: max-content;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .logo {
+        transform: scale(0.6);
+        margin-top:-10px;
+    }
+
+    .about {
+        display: block;
+        padding-top: 180px;
+        text-align: center;
+    }
+
+    .portrait {
+        height: 200px;
+        margin: 60px auto 20px auto;
+    }
+
+    .about-text {
+        width: 100%;
+        margin:0;
+    }
+
+    .about-text p {
+        font-size: 12px;
+        width: 80%;
+        margin:20px auto 60px auto;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 22px;
+        width:80%;
+        margin: auto;
+    }
+}
